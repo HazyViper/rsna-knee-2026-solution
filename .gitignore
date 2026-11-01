@@ -1,0 +1,20 @@
+# Competition data and model weights never belong here (see NOTICE, section 4).
+*.dcm
+*.pt
+*.pth
+*.npy
+*.npz
+*.parquet
+rsna-knee-abnormality-detection/
+
+# Secrets
+.env
+.env*
+kaggle.json
+**/kaggle.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/

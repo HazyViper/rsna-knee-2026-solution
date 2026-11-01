@@ -1,0 +1,57 @@
+RSNA Knee Abnormality Detection (2026) - solution code and notes
+Copyright 2026 HazyViper (Kaggle: ttsuyaogawa)
+
+The code in this repository is licensed under the Apache License, Version 2.0
+(see LICENSE). It contains, or depends on, the third-party material below.
+
+
+1. Code ported from public Kaggle notebooks (Apache License 2.0)
+
+   The image decoder and the 2.5D window generation of the inference notebook
+   (inference/decoded/p26_decode.py, embedded in
+   inference/late-l34-tau-l14.ipynb) are a port of two public notebooks by
+   dreaddevelopment:
+
+     https://www.kaggle.com/code/dreaddevelopment/knee-mri-twelve-findings-from-a-single-model
+     https://www.kaggle.com/code/dreaddevelopment/knee-mri-training-the-twelve-finding-model
+
+   Kaggle releases public notebooks under the Apache License 2.0. Each ported
+   function names, in its docstring, the lines of the notebook it was copied
+   from. The CoAtNet training recipe of the whole-knee members follows the
+   second notebook.
+
+
+2. Pretrained backbones (Apache License 2.0)
+
+   The members fine-tune two timm / Hugging Face checkpoints:
+
+     coatnet_rmlp_2_rw_384.sw_in12k_ft_in1k
+     convnext_small.in12k_ft_in1k_384
+
+   Neither is in this repository. The fine-tuned weights are published as
+   Kaggle Datasets (see README.md), each with the backbone's licence text.
+
+
+3. Training labels of five members (CC BY 4.0)
+
+   The five whole-knee members of the late submissions L14 and L34 were
+   retrained on "RSNA Knee MRI LLM Soft Labels for 4407 Studies" by drizlo
+   (the 21st place solution), version 1, CC BY 4.0:
+
+     https://www.kaggle.com/datasets/drizlo/rsna-knee-mri-llm-soft-labels
+
+   The labels are not included here.
+
+
+4. Competition data and label definitions
+
+   The models were trained on the RSNA Knee Abnormality Detection competition
+   data, used under the competition rules (section 4, Competition Data) and the
+   RSNA MIRA Dataset Research Use Agreement (http://rsna.org/mira-license).
+   This repository contains no competition data: no images, reports, labels,
+   predictions or study identifiers.
+
+   labels/p8_prompts.py quotes the threshold wording of the competition's
+   published label definitions.
+
+   For research and education only. Not for clinical use and not for diagnosis.
