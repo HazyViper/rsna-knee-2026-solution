@@ -2,6 +2,8 @@
 
 本文は [README.md](README.md)（英語）です。ここはその要約です。
 
+Kaggle の Discussion に載せた告知: [discussion/754735](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/754735)
+
 ## 結果
 
 - 最終 623 位 / 6,300（銅）。2026-10-27 に Kaggle が 125 チームを外して非公開の順位を並べ直した後の順位です。

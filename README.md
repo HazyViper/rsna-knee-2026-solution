@@ -6,7 +6,7 @@ The task was to score twelve findings for each knee MRI study (ACL, MCL, medial 
 lateral and patellofemoral OA, effusion, synovitis, Baker's cyst, contusion, fracture), and the metric was the
 macro-averaged ROC AUC.
 
-[日本語の要約](README.ja.md)
+[日本語の要約](README.ja.md) · [Kaggle discussion](https://www.kaggle.com/competitions/rsna-knee-abnormality-detection/discussion/754735)
 
 ## Results
 
